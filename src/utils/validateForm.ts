@@ -1,5 +1,6 @@
 import { FormValues } from 'interfaces/property';
 
+// form validation for values
 export const validateForm = (formValues: FormValues) => {
   const errors: { message: string } = { message: '' };
   let hasError = false;
