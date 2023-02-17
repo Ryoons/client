@@ -279,7 +279,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
         onClick={() => mutateLogout()}
         sx={{ 
         justifyContent: "center",
-        marginLeft: "12px",
+        marginLeft: "8px",
         borderRadius: "12px",
         minHeight: "56px",
         width: "90%"
