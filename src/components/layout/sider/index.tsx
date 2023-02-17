@@ -420,6 +420,9 @@ export const Sider: typeof DefaultSider = ({ render }) => {
               textAlign: "center",
               borderRadius: 0,
               borderTop: "1px solid #ffffff1a",
+              '&:hover': {
+                background: "#1E36E8"
+              },
             }}
             fullWidth
             size="large"
