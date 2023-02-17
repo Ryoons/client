@@ -182,7 +182,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
                     isSelected ? "#1E36E8" : "transparent",
                   },
                   backgroundColor:
-                  isSelected ? "#475BE8" : "transparent",
+                  isSelected ? "#0078FB" : "transparent",
                 },
                 justifyContent: "center",
                 margin: "10px auto",
@@ -289,7 +289,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
           sx={{
             justifyContent: "center",
             minWidth: 36,
-            color: "#808191",
+            color: "#333737",
           }}
         >
           <Logout />
@@ -327,7 +327,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
   };
 
   const drawer = (
-    <MuiList disablePadding sx={{ mt: 1, color: "#808191" }}>
+    <MuiList disablePadding sx={{ mt: 1, color: "#333737" }}>
       {renderSider()}
     </MuiList>
   );
@@ -387,7 +387,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             display: { xs: "none", md: "block" },
             "& .MuiDrawer-paper": {
               width: drawerWidth,
-              bgcolor: "secondary.main",
+              bgcolor: "#7F8C8D",
               overflow: "hidden",
               transition: "width 200ms cubic-bezier(0.4, 0, 0.6, 1) 0ms",
             },
@@ -415,7 +415,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
           </Box>
           <Button
             sx={{
-              background: "rgba(0,0,0,.5)",
+              background: "#0078FB",
               color: "primary.contrastText",
               textAlign: "center",
               borderRadius: 0,
