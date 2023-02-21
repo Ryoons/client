@@ -101,6 +101,22 @@ function App() {
               name: "property",
               list: MuiInferencer,
             },
+            {
+              name: "agent",
+              list: MuiInferencer,
+            },
+            {
+              name: "review",
+              list: MuiInferencer,
+            },
+            {
+              name: "message",
+              list: MuiInferencer,
+            },
+            {
+              name: "my-profile",
+              list: MuiInferencer,
+            },
           ]}
           Title={Title}
           Sider={Sider}
