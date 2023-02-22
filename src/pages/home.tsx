@@ -1,17 +1,14 @@
 
-import {
+import { 
   PieChart,
   PropertyReferrals,
   TotalRevenue,
   PropertyCard,
-  TopAgent
-} from "components"
+  TopAgent } from "components/layout";
 
 import React from "react";
 import { useList } from "@pankod/refine-core/dist/hooks";
 import { Typography, Box, Stack } from "@pankod/refine-mui";
-
-
 
 const home = () => {
   return (

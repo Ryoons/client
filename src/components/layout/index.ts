@@ -13,10 +13,6 @@ import AgentCard from "./agent/AgentCard";
 
 // home
 import TopAgent from "./home/TopAgent";
-export * from "./sider";
-export * from "./layout";
-export * from "./title";
-export * from "./header";
 
 export {
   Profile,
@@ -28,3 +24,7 @@ export {
   AgentCard,
   TopAgent,
 };
+export * from "./sider";
+export * from "./layout";
+export * from "./title";
+export * from "./header";
