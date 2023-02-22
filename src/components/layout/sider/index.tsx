@@ -245,6 +245,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             justifyContent: "center",
           }}
         >
+          {/* Dashboard icon */}
           <ListItemIcon
             sx={{
               justifyContent: "center",
