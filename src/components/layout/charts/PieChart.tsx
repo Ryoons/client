@@ -14,11 +14,13 @@ const PieChart = ({ title, value, series, colors }: PieChartProps) => {
       </Stack>
         <ReactApexChart
           options = {{
+            // options to design the chart
             chart: {type: "donut"},
             colors,
             legend: {show: false },
             dataLabels: {enabled: false  }
           }}
+          // using the data from props 
           series={series}
           type="donut"
           width="120px"
