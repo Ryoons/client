@@ -22,28 +22,29 @@ const home = () => {
 
       <Box mt="20" display="flex" flexWrap="wrap" gap={4}>
         <PieChart
+        // values used for donut charts at the top of the page
           title="Properties for Sale"
           value={684}
           series={[75, 25]}
-          colors={['#475be8', '#e4e8ef']}
+          colors={['#f75be8', '#44e8ef']}
          />
          <PieChart
           title="Properties for Rent"
-          value={550}
+          value={1284}
           series={[60, 40]}
-          colors={['#615re8', '#h4e8ed']}
+          colors={['#5EF33A', '#h4e8ed']}
          />
          <PieChart
           title="Total Customers"
-          value={2593}
+          value={25593}
           series={[90, 10]}
-          colors={['#475be8', '#e4e8ef']}
+          colors={['#475be8', '#009900']}
          />
          <PieChart
           title="Properties for Cities"
-          value={555}
+          value={328}
           series={[75, 25]}
-          colors={['#475be8', '#e4e8ef']}
+          colors={['#475be8', '#F726E6']}
          />
       </Box>
     </Box>

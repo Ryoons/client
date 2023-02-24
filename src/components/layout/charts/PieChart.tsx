@@ -11,9 +11,18 @@ const PieChart = ({ title, value, series, colors }: PieChartProps) => {
         <Typography fontSize={24} color="#11142d" fontWeight={700} mt={1}>
           {value}
         </Typography>
-        
       </Stack>
-      
+        <ReactApexChart
+          options = {{
+            chart: {type: "donut"},
+            colors,
+            legend: {show: false },
+            dataLabels: {enabled: false  }
+          }}
+          series={series}
+          type="donut"
+          width="120px"
+        />
     </Box>
   );
 };
