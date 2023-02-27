@@ -15,7 +15,7 @@ const PieChart = ({ title, value, series, colors }: PieChartProps) => {
       pl={3.5}
       py={2}
       gap={2}
-      borderRadius="15px"
+      borderRadius="5px"
       minHeight="110px"
       width="fit-content"
       boxShadow="2px 1px 2px #7393B3"
