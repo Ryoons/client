@@ -47,6 +47,11 @@ const home = () => {
           colors={['#475be8', '#F726E6']}
          />
       </Box>
+      {/* direction small devices in a column large device in row */}
+      <Stack mt="25px" width="100%" direction={{ xs: 'column', lg: 'row'}}>
+        <TotalRevenue />
+        <PropertyReferrals />
+      </Stack>
     </Box>
   )
 };

@@ -1,4 +1,3 @@
-import React from "react";
 import ReactApexChart from "react-apexcharts";
 import { Typography, Box, Stack } from "@pankod/refine-mui";
 import { PieChartProps } from "interfaces/home";
