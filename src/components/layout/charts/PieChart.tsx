@@ -19,7 +19,7 @@ const PieChart = ({ title, value, series, colors }: PieChartProps) => {
       borderRadius="15px"
       minHeight="110px"
       width="fit-content"
-      boxShadow="5px 2px 5px #7393B3"
+      boxShadow="2px 1px 2px #7393B3"
           
     >
       <Stack direction="column">
@@ -34,12 +34,20 @@ const PieChart = ({ title, value, series, colors }: PieChartProps) => {
             chart: {type: "donut"},
             colors,
             legend: {show: false },
-            dataLabels: {enabled: false  }
+            dataLabels: {enabled: false  },
+            plotOptions: {
+              pie: {
+                expandOnClick: false,
+                donut: {
+                  size: '55%'
+                },
+              }
+            }
           }}
           // using the data from props 
           series={series}
           type="donut"
-          width="120px"
+          width="130px"
         />
     </Box>
   );
