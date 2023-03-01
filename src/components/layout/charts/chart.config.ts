@@ -2,11 +2,11 @@ import { ApexOptions } from "apexcharts";
 
 export const TotalRevenueSeries = [
   {
-    name: "Last Month",
+    name: "Running Month",
     data: [183, 124, 115, 85, 143, 143, 96],
   },
   {
-    name: "Running Month",
+    name: "Last Month",
     data: [95, 84, 72, 44, 108, 108, 47],
   },
 ];
@@ -18,7 +18,7 @@ export const TotalRevenueOptions: ApexOptions = {
       show: false,
     },
   },
-  colors: ["#475BE8", "#CFC8FF"],
+  colors: ["#475BE8", "#FA8072"],
   plotOptions: {
     bar: {
       borderRadius: 4,
