@@ -20,7 +20,7 @@ const home = () => {
         Dashboard
       </Typography>
 
-      <Box mt="20" display="flex" flexWrap="wrap" gap={4}>
+      <Box mt="20" display="flex" flexWrap="wrap" gap={3}>
         <PieChart
         // values used for donut charts at the top of the page
           title="Properties for Sale"
@@ -48,7 +48,7 @@ const home = () => {
          />
       </Box>
       {/* direction small devices in a column large device in row */}
-      <Stack mt="25px" width="100%" direction={{ xs: 'column', lg: 'row'}}>
+      <Stack gap={3} mt="25px" width="100%" direction={{ xs: 'column', lg: 'row'}}>
         <TotalRevenue />
         <PropertyReferrals />
       </Stack>
