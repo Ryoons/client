@@ -18,8 +18,8 @@ const AllProperties = () => {
         <CustomButton
           title="Add Property"
           handleClick={() => {}}
-          backgroundColor="475be8"
-          color="#D3D3D3"
+          backgroundColor="#475be8"
+          color="#fcfcfc"
           icon={<Add />}
          />
       </Stack>
