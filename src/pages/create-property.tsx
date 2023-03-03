@@ -22,7 +22,17 @@ const CreateProperty = () => {
   const { refineCore: { onFinish, formLoading}, register, handleSubmit } = useForm();
 
   return (
-    <div>create-proptery</div>
+
+    // self closing form tag so we can start sending some information
+    <Form
+      type="Create"
+      register={register}
+      onFinish={onFinish}
+      formLoading={formLoading}
+      handleSubmit={handleSubmit}
+      propertyImage={propertyImage}
+
+     />
   )
 }
 
