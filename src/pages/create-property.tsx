@@ -21,6 +21,14 @@ const CreateProperty = () => {
 
   const { refineCore: { onFinish, formLoading}, register, handleSubmit } = useForm();
 
+  const handleImageChange = () => {
+
+  }
+  const onFinishHandler = () => {
+
+  }
+
+
   return (
 
     // self closing form tag so we can start sending some information
@@ -30,6 +38,8 @@ const CreateProperty = () => {
       onFinish={onFinish}
       formLoading={formLoading}
       handleSubmit={handleSubmit}
+      handleImageChange={handleImageChange}
+      onFinishHandler={onFinishHandler}
       propertyImage={propertyImage}
 
      />
