@@ -1,8 +1,18 @@
-import React from 'react'
+import { Box, Typography, FormControl, FormHelperText,
+  TextField, TextareaAutosize, Stack, Select, MenuItem, Button }
+  from "@pankod/refine-mui"
 
-const Form = () => {
+import { FormProps } from "interfaces/common";
+import CustomButton from "./CustomButton";
+
+const Form = ({ type, register, handleSubmit,
+  handleImageChange, formLoading, onFinishHandler, propertyImage} : FormProps) => {
   return (
-    <div>Form</div>
+    <Box>
+      <Typography fontSize={25} fontWeight={700} color="#11142d">
+        {type} a Property
+      </Typography>
+    </Box>
   )
 }
 
