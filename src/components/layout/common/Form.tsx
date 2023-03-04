@@ -57,11 +57,24 @@ const Form = ({ type, register, handleSubmit,
                   fontSize: '16px',
                   borderColor: 'rgba(0,0,0,0.23)',
                   borderRadius: "5px",
-                  padding: 8,
-
-                }}
+                  padding: 8}}
+                {...register('description', {required: true})}
                />
             </FormControl>
+            <Stack direction="row" gap={4}>
+              <FormControl sx={{
+                flex: 1
+              }}>
+                <FormHelperText sx={{
+                  fontWeight: 500,
+                  margin: "10px 0px",
+                  fontSize: 16,
+                  color: '#5A5A5A'                  
+                }}>
+                  Select Property Type
+                </FormHelperText>
+              </FormControl>
+            </Stack>
         </form>
       </Box>
     </Box>
