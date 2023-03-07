@@ -21,7 +21,19 @@ const CreateProperty = () => {
 
   const { refineCore: { onFinish, formLoading}, register, handleSubmit } = useForm();
 
-  const handleImageChange = () => {
+  // file reader found 
+  const handleImageChange = (file: File) => {
+    const reader = (readFile: File) => new Promise<string>
+    ((resolve, reject) => {
+      const fileReader = new FileReader();
+      fileReader.onload = () => resolve(fileReader.result as string);
+      fileReader.readAsDataURL(readFile);
+    });
+
+    //setting the results from the file to the state
+    reader(file).then((result: string) => setPropertyImage ({
+      name: file?.name, url: result
+    }))
 
   }
   const onFinishHandler = () => {
