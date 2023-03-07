@@ -112,6 +112,34 @@ const Form = ({ type, register, handleSubmit,
                />
             </FormControl>
             </Stack>
+            <FormControl>
+              <FormHelperText sx={{
+                color: "#5A5A5A",
+                fontWeight: 500,
+                margin: "10px 0px",
+                fontSize: 16,
+                }}>Enter Location</FormHelperText>
+
+              <TextField
+                fullWidth
+                required
+                id="outlined-basic"
+                color="info"
+                variant="outlined"
+                {...register('location', {required: true})}
+               />
+            </FormControl>
+            <Stack
+              direction="column"
+              gap={1}
+              justifyContent="center"
+              mb={2}
+            >
+              <Stack direction="row" gap={2}>
+                <Typography color="#5A5A5A" fontSize={16}
+                  fontWeight={500} my="10px">Property Photo</Typography>
+              </Stack>
+            </Stack>
         </form>
       </Box>
     </Box>
