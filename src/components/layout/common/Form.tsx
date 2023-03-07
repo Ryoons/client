@@ -58,7 +58,7 @@ const Form = ({ type, register, handleSubmit,
                   borderColor: 'rgba(0,0,0,0.23)',
                   borderRadius: "5px",
                   padding: 8}}
-                {...register('description', {required: true})}
+                  {...register('description', {required: true})}
                />
             </FormControl>
             <Stack direction="row" gap={4}>
@@ -73,6 +73,18 @@ const Form = ({ type, register, handleSubmit,
                 }}>
                   Select Property Type
                 </FormHelperText>
+                <Select
+                variant="outlined"
+                color="info" 
+                displayEmpty
+                required
+                inputProps={{ 'area-label': 'Without label' }}
+                defaultValue="Apartment"
+                {...register('propertyType', {required: true})}
+                >
+                  <MenuItem
+                    value="apartment"> Apartment </MenuItem>
+                </Select>
               </FormControl>
             </Stack>
         </form>
