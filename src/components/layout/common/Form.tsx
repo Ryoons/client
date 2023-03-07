@@ -145,6 +145,12 @@ const Form = ({ type, register, handleSubmit,
                     fontSize: 16
                   }}>
                     Upload *
+                    <input
+                      hidden
+                      accept="image/*" 
+                      type="file"
+                      // @ts-ignore
+                      onChange={(e) => handleImageChange(e.target.files[0])}/>
                   </Button>
               </Stack>
             </Stack>
