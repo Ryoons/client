@@ -93,6 +93,24 @@ const Form = ({ type, register, handleSubmit,
                   
                 </Select>
               </FormControl>
+              <FormControl>
+              <FormHelperText sx={{
+                color: "#5A5A5A",
+                fontWeight: 500,
+                margin: "10px 0px",
+                fontSize: 16,
+                }}>Enter Property Price</FormHelperText>
+
+              <TextField
+                fullWidth
+                required
+                id="outlined-basic"
+                color="info"
+                variant="outlined"
+                type="number"
+                {...register('price', {required: true})}
+               />
+            </FormControl>
             </Stack>
         </form>
       </Box>
