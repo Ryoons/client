@@ -153,7 +153,16 @@ const Form = ({ type, register, handleSubmit,
                       onChange={(e) => handleImageChange(e.target.files[0])}/>
                   </Button>
               </Stack>
+              <Typography
+                fontSize={14} color="#5A5A5A" sx={{ wordBreak: 'break-all'}}> 
+                {propertyImage?.name}</Typography>
             </Stack>
+            <CustomButton
+              type="submit"
+              title={formLoading ? "Submitting..." : "Submit"}
+              backgroundColor="#475be8"
+              color="#fff"
+             />
         </form>
       </Box>
     </Box>
