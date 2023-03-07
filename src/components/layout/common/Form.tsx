@@ -78,7 +78,7 @@ const Form = ({ type, register, handleSubmit,
                 color="info" 
                 displayEmpty
                 required
-                inputProps={{ 'area-label': 'Without label' }}
+                inputProps={{ 'aria-label': 'Without label' }}
                 defaultValue="Apartment"
                 {...register('propertyType', {required: true})}
                 >
@@ -138,6 +138,14 @@ const Form = ({ type, register, handleSubmit,
               <Stack direction="row" gap={2}>
                 <Typography color="#5A5A5A" fontSize={16}
                   fontWeight={500} my="10px">Property Photo</Typography>
+                  <Button component="label" sx={{
+                    width: "fit-content",
+                    color: "#475be8",
+                    textTransform: "capitalize",
+                    fontSize: 16
+                  }}>
+                    Upload *
+                  </Button>
               </Stack>
             </Stack>
         </form>
