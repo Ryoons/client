@@ -82,8 +82,15 @@ const Form = ({ type, register, handleSubmit,
                 defaultValue="Apartment"
                 {...register('propertyType', {required: true})}
                 >
-                  <MenuItem
-                    value="apartment"> Apartment </MenuItem>
+                  <MenuItem value="apartment"> Apartment </MenuItem>
+                  <MenuItem value="villa"> Villa </MenuItem>
+                  <MenuItem value="farmhouse"> Farm House </MenuItem>
+                  <MenuItem value="condo"> Condominium </MenuItem>
+                  <MenuItem value="townhouse"> Town House </MenuItem>
+                  <MenuItem value="duplex"> Duplex </MenuItem>
+                  <MenuItem value="studio"> Studio </MenuItem>
+                  <MenuItem value="fulldetached"> Fully Detached </MenuItem>
+                  
                 </Select>
               </FormControl>
             </Stack>
