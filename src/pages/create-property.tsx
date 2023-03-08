@@ -36,8 +36,11 @@ const CreateProperty = () => {
     }))
 
   }
-  const onFinishHandler = () => {
+  const onFinishHandler = async (data: FieldValues) => {
+    // if the form is not submitted, we don't want to navigate
+    if(!propertyImage.name) return alert('Please select an image.')
 
+    await onFinish({ ...data, photo: propertyImage.url, email: user.email })
   }
 
 
