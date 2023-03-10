@@ -54,8 +54,21 @@ axiosInstance.interceptors.request.use((request: AxiosRequestConfig) => {
 
 function App() {
   const authProvider: AuthProvider = {
-    login: ({ credential }: CredentialResponse) => {
+    login:async ({ credential }: CredentialResponse) => {
       const profileObj = credential ? parseJwt(credential) : null;
+
+      // save user to mongoDB
+      if (profileObj) {
+        const response = await fetch('http://localhost:8080/api/v1/users', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: profileObj.name,
+            email: profileObj.email,
+            avatar: profileObj.picture,
+          }),
+        })
+      }
 
       if (profileObj) {
         localStorage.setItem(
