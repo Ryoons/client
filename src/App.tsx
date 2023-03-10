@@ -68,16 +68,23 @@ function App() {
             avatar: profileObj.picture,
           }),
         })
-      }
 
-      if (profileObj) {
+        const data = await response.json();
+
+        // Do this if login is success
+        if(response.status === 200) {
         localStorage.setItem(
           "user",
           JSON.stringify({
             ...profileObj,
             avatar: profileObj.picture,
+            // also returning the userId
+            userid: data._id
           })
         );
+        } else {
+          return Promise.reject()
+        }
       }
 
       localStorage.setItem("token", `${credential}`);
