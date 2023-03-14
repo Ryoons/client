@@ -28,7 +28,7 @@ const TotalRevenue = () => {
               }} />
               <Stack>
                 <Typography fontSize={15} color="#475eb8">
-                  4.8%
+                  10.8%
                 </Typography>
                 <Typography fontSize={14} color="#808191">
                   Since Last Month
