@@ -34,7 +34,16 @@ const AllProperties = () => {
       </Stack>
       {/* Fetching all properties and displaying them */}
       <Box mt="20x" sx={{ display: "flex", flexWrap: "wrap", gap: 3}}>
-
+        {allProperies.map((property) => (
+          <PropertyCard
+            key={property._id}
+            id={property._id}
+            title={property.title}
+            price={property.price}
+            location={property.location}
+            photo={property.photo}
+          />
+        ))}
       </Box>
     </Box>
   )
